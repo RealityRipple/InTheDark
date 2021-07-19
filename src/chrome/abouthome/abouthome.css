@@ -70,9 +70,9 @@ a
 {
  display: inline-block;
  height: 28px;
- width: 70px;
+ width: 28px;
  filter: saturate(65%);
- min-width: 70px;
+ min-width: 28px;
 }
 #searchText
 {
