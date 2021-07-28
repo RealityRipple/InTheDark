@@ -54,9 +54,6 @@ a
 #searchLogoContainer
 {
  display: -moz-box;
- -moz-box-align: center;
- padding-top: 2px;
- -moz-padding-end: 8px;
 }
 #searchLogoContainer[hidden]
 {
@@ -64,16 +61,17 @@ a
 }
 #searchEngineLogo
 {
- display: inline-block;
+ position: absolute;
  height: 28px;
  width: 28px;
  filter: saturate(65%);
  min-width: 28px;
+ padding: 4px;
 }
 #searchText
 {
  -moz-box-flex: 1;
- padding: 6px 8px;
+ padding: 6px 8px 6px 38px;
  background-color: #000000;
  color: #FFFFFF;
  border-radius: 5px;
