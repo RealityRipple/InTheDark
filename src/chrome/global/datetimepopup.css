@@ -1,0 +1,6 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+panel[type="arrow"][side="top"], panel[type="arrow"][side="bottom"]
+{
+ margin-left: 0;
+ margin-right: 0;
+}
