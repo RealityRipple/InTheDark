@@ -1,0 +1,408 @@
+html
+{
+ font-size: 10px;
+}
+body
+{
+ margin: 0;
+ color: #FFFFFF;
+ font: message-box;
+ font-size: 1.1rem;
+}
+button
+{
+ -moz-appearance: none;
+ background: none;
+ border: none;
+}
+.nav
+{
+ display: flex;
+ width: 23.1rem;
+ height: 2.4rem;
+ margin-bottom: 0.8rem;
+ justify-content: space-between;
+}
+.nav > button
+{
+ width: 3rem;
+ height: 2.5rem;
+ background-color: #000000;
+}
+.nav > button:hover
+{
+ background-color: #303030;
+}
+.nav > button.active
+{
+ background-color: #404040;
+}
+.nav > button.left:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/left.png") no-repeat 50% 50%;
+}
+.nav > button.left:not([disabled="true"]):hover
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/left.png") no-repeat 50% 50%;
+}
+.nav > button.left.active:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/a/left.png") no-repeat 50% 50%;
+}
+.nav > button.left[disabled="true"]
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/left.png") no-repeat 50% 50%;
+}
+.nav > button.right:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/right.png") no-repeat 50% 50%;
+}
+.nav > button.right:not([disabled="true"]):hover
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/right.png") no-repeat 50% 50%;
+}
+.nav > button.right.active:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/a/right.png") no-repeat 50% 50%;
+}
+.nav > button.right[disabled="true"]
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/right.png") no-repeat 50% 50%;
+}
+.month-year-container
+{
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ top: 0;
+ left: 3rem;
+ width: 17.1rem;
+ height: 2.5rem;
+ z-index: 10;
+}
+button.month-year
+{
+ font-size: 1.3rem;
+ color: #FFFFFF;
+ border: 2px solid;
+ -moz-border-top-colors: #000000 #D0D0D0;
+ -moz-border-left-colors: #000000 #D0D0D0;
+ -moz-border-bottom-colors: #000000 #606060;
+ -moz-border-right-colors: #000000 #606060;
+ padding: 0.2rem 2.6rem 0.2rem 1.2rem;
+}
+button.month-year:hover
+{
+ color: #D0D0D0;
+ background-color: #303030;
+}
+button.month-year.active
+{
+ color: #FFFFFF;
+ background-color: #404040;
+ -moz-border-top-colors: #303030 #606060;
+ -moz-border-left-colors: #303030 #606060;
+ -moz-border-bottom-colors: #303030 #D0D0D0;
+ -moz-border-right-colors: #303030 #D0D0D0;
+}
+button.month-year::after
+{
+ position: absolute;
+ content: "";
+ width: 2.6rem;
+ height: 1.6rem;
+}
+button.month-year:not([disabled="true"])::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/down.png") no-repeat 50% 50%;
+}
+button.month-year:not([disabled="true"]):hover::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/down.png") no-repeat 50% 50%;
+}
+button.month-year[disabled="true"]::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/down.png") no-repeat 50% 50%;
+}
+button.month-year.active:not([disabled="true"])::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/up.png") no-repeat 50% 50%;
+}
+button.month-year.active:not([disabled="true"]):hover::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/up.png") no-repeat 50% 50%;
+}
+button.month-year.active[disabled="true"]::after
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/up.png") no-repeat 50% 50%;
+}
+.month-year-view
+{
+ position: absolute;
+ z-index: 5;
+ padding-top: 3.2rem;
+ top: 0;
+ left: 0;
+ bottom: 0;
+ width: 23.1rem;
+ background: #000000;
+ opacity: 1;
+ transition: opacity 0.15s;
+}
+.month-year-view.hidden
+{
+ visibility: hidden;
+ opacity: 0;
+}
+.month-year-view > .spinner-container
+{
+ width: 5.5rem;
+ margin: 0 0.5rem;
+}
+.month-year-view .spinner
+{
+ transform: scaleY(1);
+ transform-origin: top;
+ transition: transform 0.15s;
+}
+.month-year-view.hidden .spinner
+{
+ transform: scaleY(0);
+ transition: none;
+}
+.month-year-view .spinner > div
+{
+ transform: scaleY(1);
+ transition: transform 0.15s;
+}
+.month-year-view.hidden .spinner > div
+{
+ transform: scaleY(2.5);
+ transition: none;
+}
+.calendar-container
+{
+ cursor: default;
+ display: flex;
+ flex-direction: column;
+ width: 23.1rem;
+}
+.week-header
+{
+ display: flex;
+}
+.week-header > div
+{
+ color: #FFFFFF;
+ font-weight: bold;
+}
+.week-header > div.weekend
+{
+ color: #A0A0FF;
+}
+.days-viewport
+{
+ height: 15rem;
+ overflow: hidden;
+ position: relative;
+}
+.days-view
+{
+ position: absolute;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+}
+.week-header > div, .days-view > div
+{
+ align-items: center;
+ display: flex;
+ height: 2.5rem;
+ position: relative;
+ justify-content: center;
+ width: 3.3rem;
+}
+.days-view > .outside
+{
+ color: #A0A0A0;
+}
+.days-view > .out-of-range, .days-view > .off-step
+{
+ color: #606060;
+ background: #101010;
+}
+.days-view > .weekend
+{
+ color: #C0C0FF;
+}
+.days-view > .weekend.outside
+{
+ color: #8080A0;
+}
+.days-view > .out-of-range.weekend, .days-view > .off-step.weekend
+{
+ color: #303060;
+}
+.days-view > .today
+{
+ font-weight: bold;
+}
+.days-view > .out-of-range::before, .days-view > .off-step::before
+{
+ display: none;
+}
+.days-view > div:hover::before, .days-view > .select::before, .days-view > .today::before
+{
+ top: 5%;
+ bottom: 5%;
+ left: 5%;
+ right: 5%;
+}
+#time-picker, .month-year-view
+{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.spinner-container
+{
+ display: flex;
+ flex-direction: column;
+ width: 3rem;
+}
+.spinner-container > button
+{
+ background-color: #000000;
+ height: 1.2rem;
+}
+.spinner-container > button:hover
+{
+ background-color: #303030;
+}
+.spinner-container > button.active
+{
+ background-color: #404040;
+}
+.spinner-container > button.up:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/up.png") no-repeat 50% 50%;
+}
+.spinner-container > button.up:not([disabled="true"]):hover
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/up.png") no-repeat 50% 50%;
+}
+.spinner-container > button.up.active:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/a/up.png") no-repeat 50% 50%;
+}
+.spinner-container > button.up[disabled="true"]
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/up.png") no-repeat 50% 50%;
+}
+.spinner-container > button.down:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/n/down.png") no-repeat 50% 50%;
+}
+.spinner-container > button.down:not([disabled="true"]):hover
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/h/down.png") no-repeat 50% 50%;
+}
+.spinner-container > button.down.active:not([disabled="true"])
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/a/down.png") no-repeat 50% 50%;
+}
+.spinner-container > button.down[disabled="true"]
+{
+ background: url("chrome://global/skin/icons/spinner-arrows/d/down.png") no-repeat 50% 50%;
+}
+.spinner-container.hide-buttons > button
+{
+ visibility: hidden;
+}
+.spinner-container > .spinner
+{
+ position: relative;
+ width: 100%;
+ margin: 0.4rem 0;
+ cursor: default;
+ overflow-y: scroll;
+ scroll-snap-type: mandatory;
+ scroll-snap-points-y: repeat(100%);
+}
+.spinner-container > .spinner > div
+{
+ box-sizing: border-box;
+ position: relative;
+ text-align: center;
+ padding: 0.65rem 0;
+ margin-bottom: 1px;
+ height: 2.4rem;
+ -moz-user-select: none;
+ scroll-snap-coordinate: 0 0;
+}
+.spinner-container > .spinner > div::before, .calendar-container .days-view > div::before
+{
+ position: absolute;
+ top: 5%;
+ bottom: 5%;
+ left: 5%;
+ right: 5%;
+ z-index: -10;
+}
+.spinner-container > .spinner > div::before
+{
+ top: 15%;
+ bottom: -5%;
+}
+.spinner-container > .spinner > div:hover::before, .calendar-container .days-view > div:hover::before
+{
+ background-color: #000000;
+ border: 1px solid;
+ -moz-border-top-colors: #D0D0D0;
+ -moz-border-left-colors: #D0D0D0;
+ -moz-border-bottom-colors: #606060;
+ -moz-border-right-colors: #606060;
+ content: "";
+}
+.calendar-container .days-view > div.today::before
+{
+ background: #404040;
+ content: "";
+}
+.spinner-container > .spinner:not(.scrolling) > div.selection, .calendar-container .days-view > div.selection
+{
+ color: #FFFFFF;
+}
+.spinner-container > .spinner > div.selection::before, .calendar-container .days-view > div.selection::before
+{
+ background: #404040;
+ border: 1px solid;
+ -moz-border-top-colors: #606060;
+ -moz-border-left-colors: #606060;
+ -moz-border-bottom-colors: #D0D0D0;
+ -moz-border-right-colors: #D0D0D0;
+ content: "";
+}
+.spinner-container > .spinner > div.disabled::before,
+.spinner-container > .spinner.scrolling > div.selection::before,
+.spinner-container > .spinner.scrolling > div:hover::before
+{
+ display: none;
+}
+.spinner-container > .spinner > div.disabled
+{
+ opacity: 0.2;
+}
+.colon
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 2rem;
+ margin-bottom: 0.3rem;
+}
+.spacer
+{
+ width: 1rem;
+}
