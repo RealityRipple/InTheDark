@@ -94,7 +94,7 @@ a
  border: 1px solid transparent;
  cursor: pointer;
 }
-#searchSubmit:hover
+#searchSubmit:hover, #searchSubmit:focus, #searchText:focus + #searchSubmit:hover
 {
  background-color: #404040;
  border-top-color: #D0D0D0;
@@ -110,6 +110,15 @@ a
  border-bottom-color: #D0D0D0;
  border-right-color: #D0D0D0;
 }
+#searchText:focus + #searchSubmit
+{
+ background-color: #000000;
+ border-top-color: #D0D0D0;
+ border-left-color: #D0D0D0;
+ border-bottom-color: #606060;
+ border-right-color: #606060;
+}
+
 #launcher
 {
  display: -moz-box;

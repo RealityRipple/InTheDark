@@ -179,10 +179,19 @@ body
 {
  background-position: -192px 0;
 }
+#searchEngineLogo
+{
+ position: absolute;
+ height: 28px;
+ width: 28px;
+ filter: saturate(65%);
+ min-width: 28px;
+ padding: 4px;
+}
 #searchText
 {
  -moz-box-flex: 1;
- padding: 6px 8px;
+ padding: 6px 8px 6px 38px;
  background-color: #000000;
  color: #FFFFFF;
  border-radius: 5px;
@@ -205,17 +214,18 @@ body
  margin-left: 4px;
  padding: 0 9px;
  color: #FFFFFF;
- background-color: transparent;
- border: 1px solid transparent;
+ background: transparent !important;
+ border: 1px solid transparent !important;
  cursor: pointer;
  box-shadow: none;
  transition: none;
  border-radius: 0;
 }
-#searchSubmit:hover
+#searchSubmit:hover, #searchSubmit:focus,
+#searchText[keepfocus] + #searchSubmit:hover, #searchText:focus + #searchSubmit:hover
 {
  border: 1px solid;
- background-color: #404040;
+ background: #404040 !important;
  border-top-color: #D0D0D0 !important;
  border-left-color: #D0D0D0 !important;
  border-bottom-color: #606060 !important;
@@ -226,25 +236,19 @@ body
 #searchSubmit:hover:active
 {
  border: 1px solid;
- background-color: #606060;
- border-top-color: #606060;
- border-left-color: #606060;
- border-bottom-color: #D0D0D0;
- border-right-color: #D0D0D0;
+ background: #606060 !important;
+ border-top-color: #606060 !important;
+ border-left-color: #606060 !important;
+ border-bottom-color: #D0D0D0 !important;
+ border-right-color: #D0D0D0 !important;
 }
 #searchText[keepfocus] + #searchSubmit, #searchText:focus + #searchSubmit
 {
- border: 1px solid transparent;
- box-shadow: none;
-}
-#searchText[keepfocus] + #searchSubmit:hover, #searchText:focus + #searchSubmit:hover
-{
  border: 1px solid;
- background-color: #404040;
- border-top-color: #D0D0D0;
- border-left-color: #D0D0D0;
- border-bottom-color: #606060;
- border-right-color: #606060;
+ background: #000000 !important;
+ border-top-color: #D0D0D0 !important;
+ border-left-color: #D0D0D0 !important;
+ border-bottom-color: #606060 !important;
+ border-right-color: #606060 !important;
  box-shadow: none;
- border-radius: 0;
 }
