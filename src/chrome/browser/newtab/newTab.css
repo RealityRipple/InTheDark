@@ -132,6 +132,18 @@ body
  background-repeat: no-repeat;
  background-size: cover;
 }
+.newtab-thumbnail.thumbnail
+{
+ filter: grayscale(100%);
+}
+.newtab-link:hover .newtab-thumbnail.thumbnail, .newtab-link:focus .newtab-thumbnail.thumbnail
+{
+ filter: none;
+}
+.newtab-link:hover .newtab-title, .newtab-link:focus .newtab-title
+{
+ font-weight: bold;
+}
 .newtab-title
 {
  padding: 0 8px;
@@ -146,6 +158,14 @@ body
  padding: 1px 2px 3px;
  border: none;
  background: transparent url(chrome://browser/skin/newtab/controls.png);
+}
+.newtab-control-pin:dir(ltr), .newtab-control-block:dir(rtl)
+{
+ left: 0;
+}
+.newtab-control-block:dir(ltr), .newtab-control-pin:dir(rtl)
+{
+ right: 0;
 }
 .newtab-control-pin:hover
 {
@@ -179,10 +199,19 @@ body
 {
  background-position: -192px 0;
 }
+#searchEngineLogo
+{
+ position: absolute;
+ height: 28px;
+ width: 28px;
+ filter: saturate(65%);
+ min-width: 28px;
+ padding: 4px;
+}
 #searchText
 {
  -moz-box-flex: 1;
- padding: 6px 8px;
+ padding: 6px 8px 6px 38px;
  background-color: #000000;
  color: #FFFFFF;
  border-radius: 5px;
@@ -205,46 +234,41 @@ body
  margin-left: 4px;
  padding: 0 9px;
  color: #FFFFFF;
- background-color: transparent;
- border: 1px solid transparent;
+ background: transparent !important;
+ border: 1px solid transparent !important;
  cursor: pointer;
- box-shadow: none;
+ box-shadow: none !important;
  transition: none;
  border-radius: 0;
 }
-#searchSubmit:hover
+#searchSubmit:hover, #searchSubmit:focus,
+#searchText[keepfocus] + #searchSubmit:hover, #searchText:focus + #searchSubmit:hover
 {
  border: 1px solid;
- background-color: #401010;
+ background: #301010 !important;
  border-top-color: #C01818 !important;
  border-left-color: #C01818 !important;
  border-bottom-color: #601818 !important;
  border-right-color: #601818 !important;
- box-shadow: none;
+ box-shadow: none !important;
  border-radius: 0;
 }
 #searchSubmit:hover:active
 {
  border: 1px solid;
- background-color: #601818;
- border-top-color: #601818;
- border-left-color: #601818;
- border-bottom-color: #C01818;
- border-right-color: #C01818;
+ background: #401010 !important;
+ border-top-color: #601818 !important;
+ border-left-color: #601818 !important;
+ border-bottom-color: #C01818 !important;
+ border-right-color: #C01818 !important;
 }
 #searchText[keepfocus] + #searchSubmit, #searchText:focus + #searchSubmit
 {
- border: 1px solid transparent;
- box-shadow: none;
-}
-#searchText[keepfocus] + #searchSubmit:hover, #searchText:focus + #searchSubmit:hover
-{
  border: 1px solid;
- background-color: #401010;
- border-top-color: #601818;
- border-left-color: #C01818;
- border-bottom-color: #606060;
- border-right-color: #601818;
- box-shadow: none;
- border-radius: 0;
+ background: #000000 !important;
+ border-top-color: #C01818 !important;
+ border-left-color: #C01818 !important;
+ border-bottom-color: #601818 !important;
+ border-right-color: #601818 !important;
+ box-shadow: none !important;
 }

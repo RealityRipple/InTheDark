@@ -90,9 +90,9 @@ a
  border: 1px solid transparent;
  cursor: pointer;
 }
-#searchSubmit:hover
+#searchSubmit:hover, #searchSubmit:focus, #searchText:focus + #searchSubmit:hover
 {
- background-color: #401010;
+ background-color: #301010;
  border-top-color: #C01818;
  border-left-color: #C01818;
  border-bottom-color: #601818;
@@ -100,11 +100,19 @@ a
 }
 #searchSubmit:hover:active
 {
- background-color: #601818;
+ background-color: #401010;
  border-top-color: #601818;
  border-left-color: #601818;
  border-bottom-color: #C01818;
  border-right-color: #C01818;
+}
+#searchText:focus + #searchSubmit
+{
+ background-color: #000000;
+ border-top-color: #C01818;
+ border-left-color: #C01818;
+ border-bottom-color: #601818;
+ border-right-color: #601818;
 }
 #launcher
 {
@@ -148,7 +156,7 @@ a
 }
 .launchButton:hover:active
 {
- background-color: #601818;
+ background-color: #401010;
  border-top-color: #601818;
  border-left-color: #601818;
  border-bottom-color: #C01818;
