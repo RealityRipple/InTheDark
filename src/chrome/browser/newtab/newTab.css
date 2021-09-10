@@ -140,6 +140,10 @@ body
 {
  filter: none;
 }
+.newtab-link:hover .newtab-title, .newtab-link:focus .newtab-title
+{
+ font-weight: bold;
+}
 .newtab-title
 {
  padding: 0 8px;
