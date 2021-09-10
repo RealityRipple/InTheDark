@@ -1,5 +1,9 @@
 # Changelog
 
+### 5.3.2
+- Improved about:home and about:newTab styling.
+- Added Date and Time input type support.
+
 ### 5.3.1
 - Raise menu icons by 1px.
 - Unstretch search icon in about:home for Pale Moon 29.3 (with Home Styler extension).
