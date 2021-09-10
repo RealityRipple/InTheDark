@@ -237,7 +237,7 @@ body
  background: transparent !important;
  border: 1px solid transparent !important;
  cursor: pointer;
- box-shadow: none;
+ box-shadow: none !important;
  transition: none;
  border-radius: 0;
 }
@@ -250,7 +250,7 @@ body
  border-left-color: #D0D0D0 !important;
  border-bottom-color: #606060 !important;
  border-right-color: #606060 !important;
- box-shadow: none;
+ box-shadow: none !important;
  border-radius: 0;
 }
 #searchSubmit:hover:active
@@ -270,5 +270,5 @@ body
  border-left-color: #D0D0D0 !important;
  border-bottom-color: #606060 !important;
  border-right-color: #606060 !important;
- box-shadow: none;
+ box-shadow: none !important;
 }
