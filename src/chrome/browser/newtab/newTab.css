@@ -155,6 +155,14 @@ body
  border: none;
  background: transparent url(chrome://browser/skin/newtab/controls.png);
 }
+.newtab-control-pin:dir(ltr), .newtab-control-block:dir(rtl)
+{
+ left: 0;
+}
+.newtab-control-block:dir(ltr), .newtab-control-pin:dir(rtl)
+{
+ right: 0;
+}
 .newtab-control-pin:hover
 {
  background-position: -24px 0;
