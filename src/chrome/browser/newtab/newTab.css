@@ -132,6 +132,14 @@ body
  background-repeat: no-repeat;
  background-size: cover;
 }
+.newtab-thumbnail.thumbnail
+{
+ filter: grayscale(100%);
+}
+.newtab-link:hover .newtab-thumbnail.thumbnail, .newtab-link:focus .newtab-thumbnail.thumbnail
+{
+ filter: none;
+}
 .newtab-title
 {
  padding: 0 8px;
