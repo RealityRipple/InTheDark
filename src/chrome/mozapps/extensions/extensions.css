@@ -1020,8 +1020,6 @@ menulist
 {
  -moz-appearance: none;
  min-width: 0px;
- background-image: url("chrome://global/skin/progress/prog.png");
- background-repeat: repeat-x;
  border-left-width: 0;
  border-right-width: 0;
  height: 15px;
