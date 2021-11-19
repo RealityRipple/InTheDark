@@ -126,36 +126,27 @@
  /* margin top/bottom: make bar 8px tall (control height = 28, minus 2 * 10 margin) */
  /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
  margin: 8px 22px 9px;
- background-color: #000000;
+ background-color: #801818;
 }
 .bufferBar, .progressBar
 {
  /* margin top/bottom: make bar 8px tall (control height = 28, minus 2 * 10 margin) */
  /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
  margin: 8px 22px 9px;
- -moz-appearance: none;
  border: none;
- background-color: #100000;
+ background-color: transparent;
  min-width: 0;
  min-height: 0;
 }
 /* .progress-bar is an element inside the <progressmeter> implementation. */
 .bufferBar .progress-bar
 {
- /*
-  * Note that this is drawn on top of the .backgroundBar. So although this
-  * has the same background-color specified, the semitransparent
-  * compositing gives it a different visual appearance.
-  */
- background-color: #801818;
+ background-color: #000000;
  background-image: none;
- -moz-appearance: none;
- opacity: 0.7
 }
 .progressBar .progress-bar
 {
- background-color: #FF3030;
- -moz-appearance: none;
+ background-color: transparent;
 }
 /* .scale-slider is an element inside the <scale> implementation. */
 .scrubber .scale-slider, .volumeControl .scale-slider
