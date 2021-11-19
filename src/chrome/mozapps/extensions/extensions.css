@@ -1046,12 +1046,13 @@ menulist
  border-bottom-color: #601818;
  border-right-color: #601818;
  min-width: 0;
- margin: 1px;
- padding: 0px;
- width: 13px;
- height: 13px;
- min-width: 13px;
- min-height: 13px;
+ margin: 0px;
+ margin-inline-end: 2px;
+ padding: 0 1px 1px 0;
+ width: 11px;
+ height: 11px;
+ min-width: 11px;
+ min-height: 11px;
  list-style-image: url('chrome://mozapps/skin/extensions/cancel.png');
 }
 .download-progress .cancel:hover
@@ -1063,6 +1064,7 @@ menulist
  border-left-color: #C01818;
  border-bottom-color: #601818;
  border-right-color: #601818;
+ padding: 0 1px 1px 0;
 }
 .download-progress .cancel:active:hover
 {
@@ -1073,6 +1075,7 @@ menulist
  border-left-color: #601818;
  border-bottom-color: #C01818;
  border-right-color: #C01818;
+ padding: 1px 0 0 1px;
 }
 .download-progress .cancel .button-box
 {
