@@ -13,7 +13,7 @@ progressmeter
  min-height: 15px;
  background-image: linear-gradient(
   to right,
-  transparent 0%, 
+  transparent 0%,
   transparent calc(10% - 1px), #FFFFFF 10%, transparent calc(10% + 1px),
   transparent calc(20% - 1px), #FFFFFF 20%, transparent calc(20% + 1px),
   transparent calc(30% - 1px), #FFFFFF 30%, transparent calc(30% + 1px),
@@ -26,14 +26,24 @@ progressmeter
   transparent 100%
  );
 }
+toolbar progressmeter, statusbar progressmeter
+{
+ margin: 0;
+ min-width: 96px;
+ border-top: 0;
+ border-bottom: 0;
+ -moz-border-right-colors: #808080;
+ -moz-border-left-colors: #808080;
+ background-image: linear-gradient(
+  to right,
+  transparent 0%,
+  transparent 50%, #FFFFFF 50%, transparent calc(50% + 1px),
+  transparent 100%
+ );
+}
 .progress-bar
 {
  -moz-appearance: none;
  min-width: 0px;
  background-image: linear-gradient(to bottom, transparent 0%, #FFFFFF 50%, transparent 100%);
-}
-.progressmeter-statusbar
-{
- margin: 0;
- min-width: 96px;
 }
