@@ -126,7 +126,8 @@
  /* margin top/bottom: make bar 8px tall (control height = 28, minus 2 * 10 margin) */
  /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
  margin: 8px 22px 9px;
- background-color: #801818;
+ background-color: #681818;
+ background-image: linear-gradient(to right, #401010, #681818, #401010);
 }
 .bufferBar, .progressBar
 {

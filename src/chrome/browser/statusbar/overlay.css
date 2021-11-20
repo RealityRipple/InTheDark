@@ -14,21 +14,19 @@
 }
 toolbar[customizing="true"] #wrapper-status4evar-progress-widget progressmeter[value="0"], #palette-box #wrapper-status4evar-progress-widget progressmeter
 {
+ margin: 0;
+ min-width: 96px;
+ border-top: 0;
+ border-bottom: 0;
+ -moz-border-right-colors: #681818;
+ -moz-border-left-colors: #681818;
  background-image: linear-gradient(
   to right,
-  transparent 0%, 
-  transparent calc(10% - 1px), #FFFFFF 10%, transparent calc(10% + 1px),
-  transparent calc(20% - 1px), #FFFFFF 20%, transparent calc(20% + 1px),
-  transparent calc(30% - 1px), #FFFFFF 30%, transparent calc(30% + 1px),
-  transparent calc(40% - 1px), #FFFFFF 40%, transparent calc(40% + 1px),
-  transparent calc(50% - 1px), #FFFFFF 50%, transparent calc(50% + 1px),
-  transparent calc(60% - 1px), #FFFFFF 60%, transparent calc(60% + 1px),
-  transparent calc(70% - 1px), #FFFFFF 70%, transparent calc(70% + 1px),
-  transparent calc(80% - 1px), #FFFFFF 80%, transparent calc(80% + 1px),
-  transparent calc(90% - 1px), #FFFFFF 90%, transparent calc(90% + 1px),
+  transparent 0%,
+  transparent 50%, #FF3030 50%, transparent calc(50% + 1px),
   transparent 100%
  ),
- linear-gradient(to bottom, transparent 0%, #FFFFFF 50%, transparent 100%);
+ linear-gradient(to bottom, transparent 0%, #FF3030 50%, transparent 100%);
 }
 #wrapper-status4evar-status-widget toolbaritem label
 {
