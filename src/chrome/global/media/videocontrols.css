@@ -127,6 +127,7 @@
  /* margin left/right: 1/2 of scrubber thumb width, for overhang. */
  margin: 8px 22px 9px;
  background-color: #808080;
+ background-image: linear-gradient(to right, #404040, #808080, #404040);
 }
 .bufferBar, .progressBar
 {
