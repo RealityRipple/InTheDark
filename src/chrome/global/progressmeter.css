@@ -47,3 +47,16 @@ toolbar progressmeter, statusbar progressmeter
  min-width: 0px;
  background-image: linear-gradient(to bottom, transparent 0%, #FFFFFF 50%, transparent 100%);
 }
+progressmeter[mode=undetermined]
+{
+ background-image: none;
+}
+toolbar progressmeter[mode=undetermined], statusbar progressmeter[mode=undetermined]
+{
+ background-image: none;
+}
+.progress-bar[mode=undetermined]
+{
+ background-image: repeating-linear-gradient(135deg, transparent 0px, transparent 10px, #000000 10px, #000000 15px, transparent 15px),
+                   linear-gradient(to bottom, transparent 0%, #FFFFFF 50%, transparent 100%);
+}
