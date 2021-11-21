@@ -79,6 +79,6 @@ tab:first-of-type[selected="true"]
 #logQueueTabs .tab-bottom:first-of-type[selected="true"]
 {
  color: #000000;
- -moz-border-top-colors: #606060 !important;
- background-color: #606060;
+ -moz-border-top-colors: #FFFFFF !important;
+ background-color: #FFFFFF;
 }
