@@ -1,5 +1,13 @@
 # Changelog
 
+### 5.4
+- Revert "Set unstyled Toolbar Button size." due to issues with extensions that use @-moz-document.
+- New normal, indeterminate, and media Progress Bars using linear gradients.
+- New "small" Progress Bars in toolbars and statusbars.
+- Improved Add-on download cancel button style.
+- Scale (aka Slider) styling.
+- Improved tab styling, with support for bottom, left, and right tabs.
+
 ### 5.3.2
 - Improved about:home and about:newTab styling.
 - Added Date and Time input type support.
