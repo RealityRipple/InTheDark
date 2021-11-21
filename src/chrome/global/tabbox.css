@@ -1,78 +1,172 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-.tabs-left, .tabs-right
-{
- border-bottom: 1px solid #B01818;
-}
-tabpanels
+tabbox > tabpanels
 {
  -moz-appearance: none;
- border-style: solid;
- border-top: 0px;
- border-right: 1px solid #681818;
- border-bottom: 1px solid #681818;
- border-left: 1px solid #B01818;
+ border: 1px solid #B01818;
  padding: 8px;
  background-color: #000000;
  color: #FFFFFF;
 }
-tab
+tabbox > tabs > tab
 {
  -moz-appearance: none;
- margin-top: 1px;
- margin-bottom: -1px;
- padding: 1px 4px 2px 4px;
+ border: 1px solid #B01818;
+ padding: 4px;
  background-color: #000000;
  color: #FFFFFF;
- border: 1px solid #C01818;
- border-bottom-width: 2px;
+}
+tabbox > tabs > tab[selected="true"]
+{
+ -moz-user-focus: normal;
+ padding: 6px;
+}
+tabbox > tabs > tab:focus
+{
+ color: #D0D0D0;
 }
 .tab-text
 {
  margin: 0 !important;
 }
-tab[selected="true"]
+
+/* top */
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabs:first-child + tabpanels,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabpanels:first-child
 {
- -moz-user-focus: normal;
+ border-top-width: 0;
+}
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabs:first-child spacer,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabpanels:first-child + tabs spacer
+{
+ border-bottom: 1px solid #B01818;
+}
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabs:first-child tab,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabpanels:first-child + tabs tab
+{
+ margin-top: 1px;
+ margin-bottom: 0;
+ padding-top: 2px;
+ padding-bottom: 3px;
+}
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabs:first-child tab[selected="true"],
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabpanels:first-child + tabs tab[selected="true"]
+{
  margin-top: 0;
- border-bottom-color: #000000;
- padding: 1px 6px 4px 6px;
+ border-bottom-width: 0;
+ padding-top: 1px;
+ padding-bottom: 4px;
 }
-tab:focus
+
+/* bottom */
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabpanels:first-child,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabs:first-child + tabpanels
 {
- color: #D0D0D0;
+ border-bottom-width: 0;
 }
-tab[beforeselected="true"]:-moz-locale-dir(ltr), tab[selected="true"]:-moz-locale-dir(rtl) + tab
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabpanels:first-child + tabs spacer,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabs:first-child spacer
 {
-  border-right: none;
+ border-top: 1px solid #B01818;
 }
-tab[selected="true"]:-moz-locale-dir(ltr) + tab, tab[beforeselected="true"]:-moz-locale-dir(rtl)
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabpanels:first-child + tabs tab,
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabs:first-child tab
 {
- border-left: none;
+ margin-bottom: 1px;
+ margin-top: 0;
+ padding-bottom: 2px;
+ padding-top: 3px;
 }
-tab:first-of-type[selected="true"]
+tabbox:not([orient="horizontal"]):not([dir="reverse"]) > tabpanels:first-child + tabs tab[selected="true"],
+tabbox[dir="reverse"]:not([orient="horizontal"]) > tabs:first-child tab[selected="true"]
 {
- padding-right: 5px;
- padding-left: 5px;
+ margin-bottom: 0;
+ border-top-width: 0;
+ padding-bottom: 1px;
+ padding-top: 4px;
 }
-.tabs-bottom > .tabs-left, .tabs-bottom > .tabs-right
+
+/* vertical */
+tabbox:not([orient="horizontal"]) > tabs tab:not([selected="true"]):-moz-locale-dir(ltr),
+tabbox:not([orient="horizontal"]) > tabs tab[selected="true"] ~ tab:-moz-locale-dir(rtl)
 {
- border-top: 1px solid #681818 !important;
- border-bottom: none !important;
+ border-right-width: 0;
+ border-left-width: 1px;
 }
-.tab-bottom
+tabbox:not([orient="horizontal"]) > tabs tab[selected="true"] ~ tab:-moz-locale-dir(ltr),
+tabbox:not([orient="horizontal"]) > tabs tab:not([selected="true"]):-moz-locale-dir(rtl)
 {
- margin-top: -1px !important;
- margin-bottom: 1px !important;
+ border-left-width: 0;
+ border-right-width: 1px;
+}
+
+/* left */
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabs:first-child + tabpanels,
+tabbox[orient="horizontal"][dir="reverse"] > tabpanels:first-child
+{
+ border-left-width: 0;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabs:first-child spacer,
+tabbox[orient="horizontal"][dir="reverse"] > tabpanels:first-child + tabs spacer
+{
+ border-right: 1px solid #B01818;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabs:first-child tab,
+tabbox[orient="horizontal"][dir="reverse"] > tabpanels:first-child + tabs tab
+{
+ margin-left: 1px;
+ margin-right: 0;
+ padding-left: 2px;
+ padding-right: 3px;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabs:first-child tab[selected="true"],
+tabbox[orient="horizontal"][dir="reverse"] > tabpanels:first-child + tabs tab[selected="true"]
+{
+ margin-left: 0;
+ border-right-width: 0;
+ padding-left: 1px;
+ padding-right: 4px;
+}
+
+/* right */
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabpanels:first-child,
+tabbox[orient="horizontal"][dir="reverse"] > tabs:first-child + tabpanels
+{
+ border-right-width: 0;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabpanels:first-child + tabs spacer,
+tabbox[orient="horizontal"][dir="reverse"] > tabs:first-child spacer
+{
+ border-left: 1px solid #B01818;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabpanels:first-child + tabs tab,
+tabbox[orient="horizontal"][dir="reverse"] > tabs:first-child tab
+{
+ margin-right: 1px;
+ margin-left: 0;
+ padding-right: 2px;
+ padding-left: 3px;
+}
+tabbox[orient="horizontal"]:not([dir="reverse"]) > tabpanels:first-child + tabs tab[selected="true"],
+tabbox[orient="horizontal"][dir="reverse"] > tabs:first-child tab[selected="true"]
+{
+ margin-right: 0;
+ border-left-width: 0;
+ padding-right: 1px;
+ padding-left: 4px;
+}
+
+/* horizontal */
+tabbox[orient="horizontal"] > tabs tab:not([selected="true"]):-moz-locale-dir(ltr),
+tabbox[orient="horizontal"] > tabs tab[selected="true"] ~ tab:-moz-locale-dir(rtl)
+{
+ border-bottom-width: 0;
+ border-top-width: 1px;
+}
+tabbox[orient="horizontal"] > tabs tab[selected="true"] ~ tab:-moz-locale-dir(ltr),
+tabbox[orient="horizontal"] > tabs tab:not([selected="true"]):-moz-locale-dir(rtl)
+{
+ border-top-width: 0;
  border-bottom-width: 1px;
- padding: 2px 4px 1px 4px !important;
-}
-.tab-bottom[selected="true"]
-{
- margin-bottom: 0 !important;
- margin-top: -1px !important;
- padding: 4px 6px 1px 6px !important;
- -moz-border-bottom-colors: #C01818 !important;
- -moz-border-top-colors: #000000 !important;
 }
 
 /* FireFTP Fix */
