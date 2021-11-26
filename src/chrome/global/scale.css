@@ -1,5 +1,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-.scale-slider[orient="horizontal"]
+.scale-slider:not([orient="vertical"])
 {
  -moz-appearance: none;
  background-image: linear-gradient(to bottom, transparent calc(50% - 2px), #FFFFFF 50%, transparent calc(50% + 2px));
@@ -24,7 +24,7 @@
  min-height: 14px;
  border-radius: 7px;
 }
-.scale-slider[orient="horizontal"][disabled="true"]
+.scale-slider:not([orient="vertical"])[disabled="true"]
 {
  background-image: linear-gradient(to bottom, transparent calc(50% - 2px), #606060 50%, transparent calc(50% + 2px));
 }
