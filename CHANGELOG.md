@@ -1,5 +1,8 @@
 # Changelog
 
+### 5.4.1
+- Minor scale/slider improvements.
+
 ### 5.4
 - Revert "Set unstyled Toolbar Button size." due to issues with extensions that use @-moz-document.
 - New normal, indeterminate, and media Progress Bars using linear gradients.
