@@ -1,5 +1,6 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-.scale-slider[orient="horizontal"]
+scale > slider:not([orient="vertical"]),
+.scale-slider:not([orient="vertical"])
 {
  -moz-appearance: none;
  background-image: linear-gradient(to bottom, transparent calc(50% - 2px), #FF3030 50%, transparent calc(50% + 2px));
@@ -7,6 +8,7 @@
  margin: 2px 4px;
  min-width: 100px;
 }
+scale > slider[orient="vertical"],
 .scale-slider[orient="vertical"]
 {
  -moz-appearance: none;
@@ -15,6 +17,7 @@
  margin: 4px 2px;
  min-height: 100px;
 }
+scale > slider > thumb,
 .scale-thumb
 {
  -moz-appearance: none;
@@ -24,14 +27,17 @@
  min-height: 14px;
  border-radius: 7px;
 }
-.scale-slider[orient="horizontal"][disabled="true"]
+scale > slider:not([orient="vertical"])[disabled="true"],
+.scale-slider:not([orient="vertical"])[disabled="true"]
 {
  background-image: linear-gradient(to bottom, transparent calc(50% - 2px), #601818 50%, transparent calc(50% + 2px));
 }
+scale > slider[orient="vertical"][disabled="true"],
 .scale-slider[orient="vertical"][disabled="true"]
 {
  background-image: linear-gradient(to right, transparent calc(50% - 2px), #601818 50%, transparent calc(50% + 2px));
 }
+scale > slider > thumb[disabled="true"],
 .scale-thumb[disabled="true"]
 {
  background-color: #100000;

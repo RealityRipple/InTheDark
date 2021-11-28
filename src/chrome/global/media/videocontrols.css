@@ -156,6 +156,7 @@
  -moz-appearance: none;
  background: none;
  margin: 0;
+ min-width: 32px;
 }
 .scrubber .scale-slider
 {
