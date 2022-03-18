@@ -33,6 +33,15 @@ resizer[rtl="true"], resizer[dir="bottomend"]:-moz-locale-dir(rtl)
 {
  background: url("chrome://global/skin/icons/resizer-rtl.png") no-repeat;
 }
+resizer[scrollbarwidth="thin"][dir="bottomend"][element="_parent"]
+{
+ background: url("chrome://global/skin/icons/resizer-thin-ltr.png") no-repeat;
+}
+resizer[scrollbarwidth="thin"][rtl="true"],
+resizer[scrollbarwidth="thin"][dir="bottomend"][element="_parent"]:-moz-locale-dir(rtl)
+{
+ background: url("chrome://global/skin/icons/resizer-thin-rtl.png") no-repeat;
+}
 resizer[dir="left"], resizer[dir="bottomleft"], resizer[dir="bottomstart"]
 {
  transform: scaleX(-1);

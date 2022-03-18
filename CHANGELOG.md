@@ -1,5 +1,8 @@
 # Changelog
 
+### 5.4.2
+- Changed version numbering to support Pale Moon 30 exclusively.
+
 ### 5.4.1
 - Minor scale/slider improvements.
 
