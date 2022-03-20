@@ -303,7 +303,7 @@ menuitem#context_reloadTab
 menu#tab_reloadrepeat_menu,
 menu#reloadrepeat_menu
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/ReloadRepeat/ */
+ /* https://realityripple.com/Software/XUL/ReloadRepeat/ */
  background-image: -moz-image-rect(url("chrome://browser/skin/Toolbar-small.png"), 0, 112, 16, 96);
 }
 menuitem#context_toggleMuteTab[muted="true"]
@@ -484,69 +484,69 @@ menuitem#context-copyimage, menuitem#context-copyvideourl, menuitem#context-copy
 menuitem#context-zoom-zin,
 menuitem#zoomsub-zin
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-zreset,
 menuitem#zoomsub-zreset,
 menu#context-zoomsub
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 48, 16, 32);
 }
 menuitem#context-zoom-zout,
 menuitem#zoomsub-zout
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://browser/skin/zoom.png"), 0, 32, 16, 16);
 }
 menuitem#context-zoom-zcustom,
 menuitem#zoomsub-zcustom
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: url("chrome://browser/skin/tabview/edit-light.png");
 }
 menuitem#context-zoom-dcustom,
 menuitem#zoomsub-dcustom
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: url("chrome://browser/skin/devtools/tool-icons/styleeditor.png");
 }
 menuitem#context-zoom-fit,
 menuitem#zoomsub-fit
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://global/skin/media/fullscreenButton.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-fitwidth,
 menuitem#zoomsub-fitwidth
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 32, 16, 16);
 }
 menuitem#context-zoom-rotate-right,
 menuitem#rotatesub-rotate-right
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: url("chrome://browser/skin/menu-forward.png");
 }
 menuitem#context-zoom-rotate-left,
 menuitem#rotatesub-rotate-left
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: url("chrome://browser/skin/menu-back.png");
 }
 menuitem#context-zoom-rotate-180,
 menuitem#rotatesub-rotate-180,
 menu#context-rotatesub
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://browser/skin/devtools/responsiveui-rotate.png"), 0, 16, 16, 0);
 }
 menuitem#context-zoom-rotate-reset,
 menuitem#rotatesub-rotate-reset
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/ */
+ /* https://realityripple.com/Software/XUL/BIZARRE/ */
  background-image: -moz-image-rect(url("chrome://global/skin/icons/Print-preview.png"), 0, 16, 16, 0);
 }
 
@@ -701,12 +701,12 @@ menuitem#context-inspect
 }
 menuitem#trackpackage, menuitem#app_trackinghistory, menuitem#tools_trackinghistory, menuitem#task_trackinghistory
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
+ /* https://realityripple.com/Software/XUL/Track-Package/ */
  background-image: url("chrome://browser/skin/devtools/tool-icons/scratchpad.png");
 }
 menuitem#trackgmaps
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/Track-Package/ */
+ /* https://realityripple.com/Software/XUL/Track-Package/ */
  background-image: url("chrome://browser/skin/permissions/geo.png");
  background-size: 16px 16px;
 }

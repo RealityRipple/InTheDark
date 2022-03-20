@@ -73,7 +73,7 @@
 }
 #cookiesTab
 {
- /* https://realityripple.com/Software/Mozilla-Extensions/CookiePage/ */
+ /* https://realityripple.com/Software/XUL/CookiePage/ */
  list-style-image: url("chrome://browser/skin/permissions/cookie.png") !important;
 }
 #cookiesTab > .viewButtonIcon
