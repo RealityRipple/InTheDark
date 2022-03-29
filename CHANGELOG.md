@@ -1,6 +1,9 @@
 # Changelog
 
-### 5.4.2
+### 30.29
+- Support Pale Moon 29 a little longer.
+
+### 5.4.2 / 30.0
 - Changed version numbering to support Pale Moon 30 exclusively.
 
 ### 5.4.1
