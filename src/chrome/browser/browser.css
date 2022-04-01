@@ -97,6 +97,18 @@
 {
  border-radius: 0;
 }
+#main-window[privatebrowsingmode=temporary] #toolbar-menubar
+{
+ background-image: -moz-linear-gradient(top, #400040 1px, #000000 100%);
+}
+#main-window[privatebrowsingmode=temporary] #main-menubar
+{
+ background-color: transparent !important;
+}
+#main-window[privatebrowsingmode=temporary] #main-menubar > menu:not([_moz-menuactive="true"])
+{
+ background-color: transparent !important;
+}
 #main-window[privatebrowsingmode=temporary] #appmenu-button
 {
  background-image: -moz-linear-gradient(top, #400040 1px, #000000 100%);
