@@ -1,5 +1,8 @@
 # Changelog
 
+### 31.0
+- Updated to Pale Moon 31.
+
 ### 30.29
 - Support Pale Moon 29 a little longer.
 
