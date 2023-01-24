@@ -1,5 +1,8 @@
 # Changelog
 
+### 32.0
+- Updated to Pale Moon 32.
+
 ### 31.0
 - Updated to Pale Moon 31.
 
