@@ -1,5 +1,8 @@
 # Changelog
 
+### 32.1
+- Address Bar now uses 'monospace' font.
+
 ### 32.0
 - Updated to Pale Moon 32.
 
