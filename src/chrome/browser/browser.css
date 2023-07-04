@@ -1528,6 +1528,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 {
  -moz-margin-start: 0;
  min-width: 4em;
+ font-family: monospace;
 }
 #urlbar-icons
 {
@@ -1865,6 +1866,10 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 {
  font-size: 1em;
  color: #FFFFFF;
+}
+.ac-url-text
+{
+ font-family: monospace;
 }
 .ac-url-text[selected="true"]
 {
