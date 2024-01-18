@@ -4,7 +4,7 @@
 A dark, simple, red-tinted theme for Pale Moon.
 
 #### Supports
- * Pale Moon [32.0 - 32.*]
+ * Pale Moon [33.0 - 33.*]
 
 ## Building
 Simply download the contents of the "src" folder  and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
