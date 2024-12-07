@@ -1,5 +1,10 @@
 # Changelog
 
+### 33.1
+- Added default checkbox icon fallback.
+- Fixed ascending sort icon on List headers.
+- Fixed dark search results background in FireFTP.
+
 ### 33.0
 - Updated to Pale Moon 33.
 
