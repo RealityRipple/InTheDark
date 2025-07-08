@@ -338,6 +338,7 @@ button.month-year.active[disabled="true"]::after
  padding: 0.65rem 0;
  margin-bottom: 1px;
  height: 2.4rem;
+ user-select: none;
  -moz-user-select: none;
  scroll-snap-coordinate: 0 0;
 }
