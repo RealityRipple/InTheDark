@@ -1,5 +1,8 @@
 # Changelog
 
+### 33.2
+- Add 'user-select' for forward compatibility.
+
 ### 33.1
 - Added default checkbox icon fallback.
 - Fixed ascending sort icon on List headers.
