@@ -11,6 +11,7 @@
                                                   rgba(69, 69, 69, 0.8) 20px,
                                                   rgba(69, 69, 69, 0.8) 40px);
  color: #FFFFFF;
+ user-select: none;
  -moz-user-select: none;
  position: relative;
 }

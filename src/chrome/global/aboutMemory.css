@@ -14,6 +14,7 @@ body
 div.ancillary
 {
  margin: 0.5em 0;
+ user-select: none;
  -moz-user-select: none;
 }
 div.section
@@ -105,16 +106,19 @@ h2
 }
 .noselect
 {
+ user-select: none;
  -moz-user-select: none;  /* no need to include this when cutting+pasting */
 }
 .option
 {
  font-size: 80%;
+ user-select: none;
  -moz-user-select: none;  /* no need to include this when cutting+pasting */
 }
 .legend
 {
  font-size: 80%;
+ user-select: none;
  -moz-user-select: none;  /* no need to include this when cutting+pasting */
 }
 .debug
