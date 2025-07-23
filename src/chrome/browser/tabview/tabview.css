@@ -193,6 +193,7 @@ html[dir=rtl] .groupItem .close
  right: 1px;
  -moz-border-start: 1px solid #A0A0A0;
  padding: 0 5px;
+ overflow: clip;
  overflow: -moz-hidden-unscrollable;
  text-align: start;
  line-height: 0;
