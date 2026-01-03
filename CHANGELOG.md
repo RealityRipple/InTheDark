@@ -1,5 +1,12 @@
 # Changelog
 
+### 34.0
+- Updated to Pale Moon 34
+- Add 'overflow: clip' for forward compatibility.
+- Drop legacy '-moz-user-select'.
+- Update '-moz-selection' to 'selection'.
+- Update '-moz-appearance' to 'appearance'.
+
 ### 33.2
 - Add 'user-select' for forward compatibility.
 
