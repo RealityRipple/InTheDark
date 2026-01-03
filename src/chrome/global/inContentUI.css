@@ -4,7 +4,7 @@
 /* Page background */
 *|*:root
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 18px;
  background-repeat: repeat;
  color: #FFFFFF;
@@ -48,7 +48,7 @@ html|html
  /* Buttons */
  *|button, menulist, colorpicker[type="button"]
  {
-  -moz-appearance: none;
+  appearance: none;
   color: #FFFFFF;
   padding: 0 5px;
   background: #000000;

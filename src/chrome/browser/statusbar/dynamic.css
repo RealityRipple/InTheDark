@@ -1,12 +1,12 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 #urlbar[s4estyle="true"] > #urlbar-progress-alt > .progress-bar
 {
- -moz-appearance: none;
+ appearance: none;
  background: #33FF33;
 }
 #status4evar-progress-bar[s4estyle="true"] > .progress-bar
 {
- -moz-appearance: none;
+ appearance: none;
  background: #33FF33;
  border-radius: 3px;
 }

@@ -1,14 +1,14 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 toolbox
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #000000;
  color: #FFFFFF;
  border: 0px;
 }
 toolbar, menubar
 {
- -moz-appearance: none;
+ appearance: none;
 }
 toolbar
 {
@@ -24,7 +24,7 @@ toolbar:first-child, menubar
 }
 toolbarseparator
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 3px;
  border-left: 1px solid #FF3030;
  width: 1px;

@@ -3,7 +3,7 @@
 {
  border: none;
  padding: 3px 5px;
- -moz-appearance: none;
+ appearance: none;
 }
 findbar
 {
@@ -80,7 +80,7 @@ findbar
 }
 .findbar-textbox
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 0px;
  border: 2px solid;
  -moz-border-top-colors: #301010 #601818;

@@ -43,7 +43,7 @@ notification[type="critical"] .messageImage[type="critical"]
 }
 .messageCloseButton
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 4px 2px;
  border: none !important;
 }
@@ -69,7 +69,7 @@ notification[type="critical"] .messageImage[type="critical"]
 }
 .popup-notification-menubutton:not([type="menu-button"]), .popup-notification-menubutton > .button-menubutton-button, .popup-notification-menubutton > .button-menubutton-dropmarker
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 0;
  border: 2px solid;
  -moz-border-top-colors: #000000 #C01818;

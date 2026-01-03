@@ -146,7 +146,7 @@
 /*** category selector ***/
 #categories
 {
- -moz-appearance: none;
+ appearance: none;
  border: 2px solid;
  -moz-border-top-colors: #601818 #100000;
  -moz-border-right-colors: #000000 #000000;
@@ -160,7 +160,7 @@
 }
 .category
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #100000;
  color: #FFFFFF;
  min-height: 0;
@@ -305,7 +305,7 @@
 {
  #header-search
  {
-  -moz-appearance: none;
+  appearance: none;
   border: 1px solid #601818;
   padding-bottom: 2px;
   background-color: #000000;
@@ -336,11 +336,11 @@
 /*** sorters ***/
 .sort-controls
 {
- -moz-appearance: none;
+ appearance: none;
 }
 .sorter
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid transparent;
  background: #000000;
  border-radius: 0;
@@ -411,7 +411,7 @@
 /*** list ***/
 .list
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 0;
  border: none;
  background-color: #000000;
@@ -580,7 +580,7 @@
 }
 .addon .relnotes-toggle
 {
- -moz-appearance: none;
+ appearance: none;
  border: none;
  background: transparent;
  font-weight: bold;
@@ -713,7 +713,7 @@
 }
 .search-filter-radio
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 0 6px;
  margin: 0 3px;
  border: 2px solid;
@@ -853,7 +853,7 @@
 }
 #detail-contrib-btn
 {
- -moz-appearance: none;
+ appearance: none;
  border: 2px solid;
  -moz-border-top-colors: transparent #C01818;
  -moz-border-right-colors: transparent #601818;
@@ -981,7 +981,7 @@ menulist
 /*** download progress ***/
 .download-progress
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 2px 4px;
  border: 1px solid;
  border-top-color: #FF3030;
@@ -1005,7 +1005,7 @@ menulist
 }
 .download-progress .start-cap, .download-progress[complete] .end-cap, .download-progress[mode="undetermined"] .end-cap, .download-progress .progress .progress-bar
 {
- -moz-appearance: none;
+ appearance: none;
 }
 .download-progress .start-cap
 {
@@ -1018,7 +1018,7 @@ menulist
 }
 .download-progress .progress .progress-bar
 {
- -moz-appearance: none;
+ appearance: none;
  min-width: 0px;
  border-left-width: 0;
  border-right-width: 0;
@@ -1028,7 +1028,7 @@ menulist
 }
 .download-progress .progress
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: transparent;
  padding: 0;
  margin: 0;
@@ -1037,7 +1037,7 @@ menulist
 }
 .download-progress .cancel
 {
- -moz-appearance: none;
+ appearance: none;
  color: #FFFFFF;
  background-color: #000000;
  border: 1px solid;
@@ -1132,7 +1132,7 @@ menulist
 }
 button.button-link
 {
- -moz-appearance: none;
+ appearance: none;
  background: transparent;
  border: none;
  box-shadow: none;
@@ -1163,7 +1163,7 @@ button.button-link:not([disabled="true"]):active:hover
 
 .header-button
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 1px 3px;
  color: #FFFFFF;
  text-shadow: 0 0 3px white;

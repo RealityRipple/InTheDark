@@ -52,14 +52,14 @@ toolbar[mode="icons"] #status4evar-download-button[forcelabel="true"] > label
 #status4evar-download-progress-bar
 {
  border: 1px solid gray;
- -moz-appearance: none;
+ appearance: none;
  margin: 0px;
  min-height: 0px;
  min-width: 0px;
 }
 #status4evar-download-progress-bar > *
 {
- -moz-appearance: none;
+ appearance: none;
  background: #FF3030;
 }
 #status4evar-download-progress-bar[pmType$="unknown"] > .progress-bar
@@ -114,19 +114,19 @@ toolbar[iconsize="small"] #status4evar-download-button #status4evar-download-ico
 }
 splitter.status4evar-status-splitter
 {
- -moz-appearance: splitter;
+ appearance: splitter;
  border: none;
  background: transparent;
  position: relative;
 }
 splitter.status4evar-status-splitter:not(:hover)
 {
- -moz-appearance: none;
+ appearance: none;
 }
 #urlbar-progress-alt
 {
  margin: 0px;
- -moz-appearance: none;
+ appearance: none;
  min-height: 0px;
  height: 3px;
  border: none;
@@ -292,7 +292,7 @@ splitter.status4evar-status-splitter
 }
 #browser-bottombox[s4eboarder="true"] :-moz-any(#status4evar-status-bar, #addon-bar)
 {
- -moz-appearance: none;
+ appearance: none;
 }
 #browser-bottombox[s4eboarder="true"] > *:not([hidden="true"]):not([collapsed="true"])
 {

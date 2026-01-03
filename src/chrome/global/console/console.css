@@ -183,7 +183,7 @@ toolbar#ToolbarMode .toolbarbutton-text
 }
 #ToolbarMode
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: black;
  color: white;
  border: 0px;
@@ -191,7 +191,7 @@ toolbar#ToolbarMode .toolbarbutton-text
 }
 #ToolbarEval
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: black;
  color: white;
  border: 0px;

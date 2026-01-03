@@ -9,7 +9,7 @@ window, dialog
 }
 #palette-box
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 0 0 10px;
  background: #000000;
  color: #FFFFFF;

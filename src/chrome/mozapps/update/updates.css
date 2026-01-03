@@ -57,7 +57,7 @@ wizardpage
 /* License Page */
 #licenseContent
 {
- -moz-appearance: listbox;
+ appearance: listbox;
 }
 
 /* Incompatible List Page */
@@ -83,7 +83,7 @@ wizardpage
 {
  list-style-image: url(chrome://mozapps/skin/update/downloadButtons.png);
  -moz-image-region: rect(0px, 48px, 16px, 32px);
- -moz-appearance: none;
+ appearance: none;
  background-color: transparent !important;
  border: none;
  min-width: 0;
@@ -162,7 +162,7 @@ update
 }
 #historyItems
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #100000;
  height: 200px;
  margin: 1px 5px 4px 5px;

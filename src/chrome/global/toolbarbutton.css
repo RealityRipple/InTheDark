@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 toolbarbutton
 {
- -moz-appearance: none;
+ appearance: none;
  -moz-box-align: center;
  -moz-box-pack: center;
  margin: 0px;
@@ -21,7 +21,7 @@ toolbarbutton.tabbable
 }
 toolbarbutton:focus
 {
- -moz-appearance: none;
+ appearance: none;
 }
 toolbarbutton[disabled="true"], toolbarbutton[disabled="true"]:hover, toolbarbutton[disabled="true"]:hover:active, toolbarbutton[disabled="true"][open="true"]
 {

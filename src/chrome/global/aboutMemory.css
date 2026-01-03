@@ -15,7 +15,6 @@ div.ancillary
 {
  margin: 0.5em 0;
  user-select: none;
- -moz-user-select: none;
 }
 div.section
 {
@@ -106,20 +105,17 @@ h2
 }
 .noselect
 {
- user-select: none;
- -moz-user-select: none;  /* no need to include this when cutting+pasting */
+ user-select: none;  /* no need to include this when cutting+pasting */
 }
 .option
 {
  font-size: 80%;
- user-select: none;
- -moz-user-select: none;  /* no need to include this when cutting+pasting */
+ user-select: none;  /* no need to include this when cutting+pasting */
 }
 .legend
 {
  font-size: 80%;
- user-select: none;
- -moz-user-select: none;  /* no need to include this when cutting+pasting */
+ user-select: none;  /* no need to include this when cutting+pasting */
 }
 .debug
 {
@@ -142,7 +138,7 @@ h2
 
 button
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 1px;
  margin-top: 0px;
  min-width: 60px;

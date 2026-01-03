@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 spinbuttons
 {
- -moz-appearance: none;
+ appearance: none;
  cursor: default;
 }
 .spinbuttons-button
@@ -18,7 +18,7 @@ spinbuttons
 }
 .spinbuttons-up
 {
- -moz-appearance: none;
+ appearance: none;
  background-image: url("chrome://global/skin/arrow/arrow-up.gif");
  background-position: center center;
  background-repeat: no-repeat;
@@ -38,7 +38,7 @@ spinbuttons
 }
 .spinbuttons-down
 {
- -moz-appearance: none;
+ appearance: none;
  background-image: url("chrome://global/skin/arrow/arrow-dn.gif");
  background-position: center center;
  background-repeat: no-repeat;

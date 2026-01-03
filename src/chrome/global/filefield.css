@@ -1,7 +1,7 @@
 filefield
 {
  margin: 2px 4px;
- -moz-appearance: none;
+ appearance: none;
  border: 2px solid;
  -moz-border-top-colors: #301010 #601818;
  -moz-border-right-colors: #681818 #C01818;
@@ -29,7 +29,7 @@ filefield
 }
 .fileFieldLabel
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: transparent;
  border: none;
  margin: 0px;

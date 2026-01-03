@@ -56,9 +56,8 @@ button
 {
  font: message-box;
  font-size: 0.6875em;
- -moz-appearance: none;
+ appearance: none;
  user-select: none;
- -moz-user-select: none;
  width: 100%;
  margin: 1px;
  min-width: 60px;

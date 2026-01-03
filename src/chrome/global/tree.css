@@ -9,7 +9,7 @@ tree
  -moz-border-left-colors: #301010 #601818;
  background-color: #000000;
  color: #FFFFFF;
- -moz-appearance: none;
+ appearance: none;
 }
 .focusring > .tree-rows > .tree-bodybox
 {
@@ -106,7 +106,7 @@ treechildren::-moz-tree-cell-text(progressmeter)
 }
 treecol, treecolpicker
 {
- -moz-appearance: none;
+ appearance: none;
  -moz-box-align: center;
  -moz-box-pack: center;
  border: 2px solid;
@@ -128,7 +128,7 @@ treecol, treecolpicker
 }
 treecol[hideheader="true"]
 {
- -moz-appearance: none;
+ appearance: none;
  border: none;
  padding: 0;
 }

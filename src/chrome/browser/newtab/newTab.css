@@ -19,7 +19,7 @@ body
 }
 .newtab-undo-button
 {
- -moz-appearance: none;
+ appearance: none;
  color: #FFFFFF;
  cursor: pointer;
  padding: 0;
@@ -44,7 +44,7 @@ body
 }
 #newtab-undo-close-button
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 0;
  border: none;
  list-style-image: url("chrome://global/skin/icons/close.png");
