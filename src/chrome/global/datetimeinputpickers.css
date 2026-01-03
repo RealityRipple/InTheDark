@@ -339,7 +339,6 @@ button.month-year.active[disabled="true"]::after
  margin-bottom: 1px;
  height: 2.4rem;
  user-select: none;
- -moz-user-select: none;
  scroll-snap-coordinate: 0 0;
 }
 .spinner-container > .spinner > div::before, .calendar-container .days-view > div::before
