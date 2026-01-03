@@ -16,7 +16,7 @@
 }
 #sites-list
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid #808080;
  background-color: #000000;
  margin: 5px 0 0 0;

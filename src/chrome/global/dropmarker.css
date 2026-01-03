@@ -1,6 +1,6 @@
 dropmarker
 {
- -moz-appearance: none;
+ appearance: none;
  width: 16px;
  height: 16px;
  -moz-box-align: center;

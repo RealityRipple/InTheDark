@@ -6,7 +6,7 @@
 {
  #downloadView
  {
-  -moz-appearance: none;
+  appearance: none;
   margin: 0;
   border-bottom: 2px solid;
   -moz-border-bottom-colors: #D0D0D0 #606060;
@@ -32,7 +32,7 @@ richlistitem[type="download"] .dateTime
 }
 .mini-button
 {
- -moz-appearance: none;
+ appearance: none;
  list-style-image: url(chrome://mozapps/skin/downloads/downloadButtons.png);
  background-color: transparent;
  border: none;
@@ -131,12 +131,12 @@ richlistitem[type="download"] .dateTime
 {
  #downloadManager
  {
-  -moz-appearance: -moz-win-glass;
+  appearance: -moz-win-glass;
   background: transparent;
  }
  #downloadView
  {
-  -moz-appearance: -moz-win-exclude-glass;
+  appearance: -moz-win-exclude-glass;
   border: none;
  }
  windowdragbox

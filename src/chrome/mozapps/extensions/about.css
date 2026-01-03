@@ -14,12 +14,12 @@
 {
  #genericAbout
  {
-  -moz-appearance: none;
+  appearance: none;
   background: black;
  }
  #clientBox
  {
-  -moz-appearance: none;
+  appearance: none;
  }
 }
 .basic-info

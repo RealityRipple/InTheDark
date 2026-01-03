@@ -93,7 +93,7 @@ prefpane > .content-box
 }
 #handlersView
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid rgba(31,64,100,0.4);
  overflow-y: auto;
 }
@@ -127,7 +127,7 @@ description > html|a
 }
 .header-button
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 1px 3px;
  color: #FFFFFF;
  background: #000000;

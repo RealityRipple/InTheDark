@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 tabbox > tabpanels
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid #C0C0C0;
  padding: 8px;
  background-color: #000000;
@@ -9,7 +9,7 @@ tabbox > tabpanels
 }
 tabbox > tabs > tab
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid #C0C0C0;
  padding: 4px;
  background-color: #000000;

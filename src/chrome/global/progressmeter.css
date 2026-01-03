@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 progressmeter
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 2px 4px;
  border: 1px solid;
  -moz-border-top-colors: #FFFFFF;
@@ -43,7 +43,7 @@ toolbar progressmeter, statusbar progressmeter
 }
 .progress-bar
 {
- -moz-appearance: none;
+ appearance: none;
  min-width: 0px;
  background-image: linear-gradient(to bottom, transparent 0%, #FFFFFF 50%, transparent 100%);
 }

@@ -14,7 +14,7 @@ menulist > menupopup, .menulist-menupopup
 }
 window, page, dialog, wizard, prefwindow
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #000000;
  color: #FFFFFF;
  font: message-box;
@@ -67,14 +67,14 @@ iframe
 }
 statusbar
 {
- -moz-appearance: none;
+ appearance: none;
  border: 0px;
  background-color: #000000;
  min-height: 22px;
 }
 statusbarpanel
 {
- -moz-appearance: none;
+ appearance: none;
  -moz-box-align: center;
  -moz-box-pack: center;
  border: 0px;
@@ -84,7 +84,7 @@ statusbarpanel
 {
  -moz-box-align: end;
  -moz-box-pack: end;
- -moz-appearance: none;
+ appearance: none;
  padding: 0;
  border: none;
 }
@@ -96,7 +96,7 @@ sidebarheader
 {
  height: 25px;
  background-color: #000000;
- -moz-appearance: none;
+ appearance: none;
  border-bottom: 1px solid #808080;
  border-top: 1px solid #C0C0C0;
 }
@@ -168,7 +168,7 @@ separator.groove[orient="vertical"]
 }
 .plain
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 0 !important;
  border: none;
  padding: 0;
@@ -245,7 +245,7 @@ label[disabled="true"]:-moz-system-metric(windows-classic)
  background-image: url("chrome://global/skin/icons/autoscroll.png");
  background-color: transparent;
  background-position: right top;
- -moz-appearance: none;
+ appearance: none;
 }
 .autoscroller[scrolldir="NS"]
 {

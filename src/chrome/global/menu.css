@@ -1,7 +1,7 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 menu, menuitem, .splitmenu-menuitem
 {
- -moz-appearance: none;
+ appearance: none;
  -moz-box-align: center;
  border: 1px solid transparent;
  color: #FFFFFF;
@@ -50,7 +50,7 @@ menuitem.spell-suggestion
 .menu-text
 {
  -moz-padding-start: 1.45em !important;
- -moz-appearance: none;
+ appearance: none;
 }
 .menu-text, .menu-iconic-text
 {
@@ -81,12 +81,12 @@ menuitem.spell-suggestion
 }
 menu.menu-iconic > .menu-iconic-left, menuitem.menuitem-iconic > .menu-iconic-left, .splitmenu-menuitem[iconic="true"] > .menu-iconic-left
 {
- -moz-appearance: none;
+ appearance: none;
  padding: 1px 0px;
 }
 .menu-right
 {
- -moz-appearance: none;
+ appearance: none;
  -moz-margin-end: -2px;
  -moz-margin-start: 6px;
  list-style-image: url("chrome://global/skin/menu/Menu-arrow.png");
@@ -122,7 +122,7 @@ menubar > menu
 }
 menubar > menu
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #000000 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
@@ -134,7 +134,7 @@ menubar > menu
 }
 menubar > menu[_moz-menuactive="true"]
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #404040 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
@@ -145,7 +145,7 @@ menubar > menu[_moz-menuactive="true"]
 }
 menubar > menu[_moz-menuactive="true"][open="true"]
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #505050 !important;
  color: #FFFFFF !important;
  border: 2px solid !important;
@@ -156,7 +156,7 @@ menubar > menu[_moz-menuactive="true"][open="true"]
 }
 menubar > menu[disabled="true"]
 {
- -moz-appearance: none;
+ appearance: none;
  background-color: #202020 !important;
  color: #606060 !important;
  border: 1px solid !important;
@@ -189,7 +189,7 @@ menu[_moz-menuactive="true"], menuitem[_moz-menuactive="true"], .splitmenu-menui
 }
 .menulist-menupopup > menuitem, menulist > menupopup > menuitem, .menulist-menupopup > menu, menulist > menupopup > menu
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid transparent;
  -moz-padding-start: 5px;
  -moz-padding-end: 5px;
@@ -227,7 +227,7 @@ menulist > menupopup > menuitem:not(.menuitem-iconic) > .menu-iconic-text
 }
 menuitem[type="checkbox"], menuitem[type="radio"]
 {
- -moz-appearance: none;
+ appearance: none;
 }
 menuitem[type="checkbox"][checked="true"]
 {
@@ -255,7 +255,7 @@ menuitem[checked="true"][type="radio"][_moz-menuactive="true"]
 }
 menuitem[type="checkbox"] > .menu-iconic-left, menuitem[checked="true"] > .menu-iconic-left, menuitem[type="radio"] > .menu-iconic-left
 {
- -moz-appearance: none;
+ appearance: none;
  padding-top: 0px;
 }
 menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon, menuitem[checked="true"] > .menu-iconic-left > .menu-iconic-icon, menuitem[type="radio"] > .menu-iconic-left > .menu-iconic-icon
@@ -264,7 +264,7 @@ menuitem[type="checkbox"] > .menu-iconic-left > .menu-iconic-icon, menuitem[chec
 }
 menuseparator
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 1px;
  border-top: 1px solid #FFFFFF;
 }

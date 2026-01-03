@@ -1,6 +1,6 @@
 #licenseContainer, #pluginList
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 2px 4px;
  border: 1px solid;
  -moz-border-top-colors: #606060;

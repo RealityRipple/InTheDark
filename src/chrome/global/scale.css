@@ -2,7 +2,7 @@
 scale > slider:not([orient="vertical"]),
 .scale-slider:not([orient="vertical"])
 {
- -moz-appearance: none;
+ appearance: none;
  background-image: linear-gradient(to bottom, transparent calc(50% - 2px), #FFFFFF 50%, transparent calc(50% + 2px));
  background-repeat: repeat-x;
  margin: 2px 4px;
@@ -11,7 +11,7 @@ scale > slider:not([orient="vertical"]),
 scale > slider[orient="vertical"],
 .scale-slider[orient="vertical"]
 {
- -moz-appearance: none;
+ appearance: none;
  background-image: linear-gradient(to right, transparent calc(50% - 2px), #FFFFFF 50%, transparent calc(50% + 2px));
  background-repeat: repeat-y;
  margin: 4px 2px;
@@ -20,7 +20,7 @@ scale > slider[orient="vertical"],
 scale > slider > thumb,
 .scale-thumb
 {
- -moz-appearance: none;
+ appearance: none;
  border: 1px solid #FFFFFF;
  background-color: #000000;
  min-width: 14px;

@@ -10,7 +10,7 @@
  background-color: transparent;
  background-repeat: no-repeat;
  background-position: center;
- -moz-appearance: none;   /* Remove the native button appearance and styling */
+ appearance: none;   /* Remove the native button appearance and styling */
  margin: 0;
  padding: 0;
  min-height: 28px;
@@ -153,7 +153,7 @@
 .scrubber .scale-slider, .volumeControl .scale-slider
 {
  /* Hide the default horizontal bar. */
- -moz-appearance: none;
+ appearance: none;
  background: none;
  margin: 0;
  min-width: 32px;
@@ -168,7 +168,7 @@
 .scrubber .scale-thumb, .volumeControl .scale-thumb
 {
  /* Override the default thumb appearance with a custom image. */
- -moz-appearance: none;
+ appearance: none;
  background: transparent;
  border: none;
 }

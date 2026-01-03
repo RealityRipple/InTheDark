@@ -138,7 +138,7 @@ h2
 
 button
 {
- -moz-appearance: none;
+ appearance: none;
  margin: 1px;
  margin-top: 0px;
  min-width: 60px;

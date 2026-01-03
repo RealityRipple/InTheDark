@@ -42,7 +42,7 @@
 #placesMenu
 {
  -moz-margin-start: 6px;
- -moz-appearance: none;
+ appearance: none;
 }
 #placesMenu > menu > .menubar-text
 {
