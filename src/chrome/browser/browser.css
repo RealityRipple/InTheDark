@@ -3125,7 +3125,7 @@ statuspanel
  color: inherit;
  text-align: center;
 }
-.devtools-responsiveui-menulist html|*.menulist-editable-input::-moz-selection
+.devtools-responsiveui-menulist html|*.menulist-editable-input::selection
 {
  background: #606060;
 }
@@ -3560,7 +3560,7 @@ html|*#gcli-output-frame {
   background-position: -16px center;
 }
 
-.gclitoolbar-input-node > .textbox-input-box > html|*.textbox-input::-moz-selection {
+.gclitoolbar-input-node > .textbox-input-box > html|*.textbox-input::selection {
   background-color: hsl(210,30%,85%);
   color: hsl(210,24%,16%);
   text-shadow: none;
