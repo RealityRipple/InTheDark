@@ -1,5 +1,8 @@
 # Changelog
 
+### 35.0
+- Updated to Pale Moon 35.
+
 ### 34.0
 - Updated to Pale Moon 34
 - Add 'overflow: clip' for forward compatibility.
